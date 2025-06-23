@@ -1,0 +1,18 @@
+name: muse_ui
+description: "UI elements for Flutter."
+version: 0.0.2
+homepage: https://github.com/musetools/muse_ui
+repository: https://github.com/musetools/muse_ui/tree/master/packages/muse_ui
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
