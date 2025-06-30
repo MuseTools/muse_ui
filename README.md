@@ -17,8 +17,8 @@ This aims to facilitate daily complex business development by focusing on busine
 
 ### [UI Widgets Preview](https://musetools.github.io/muse_ui_demo/)
 
-  ![](http://oss.musetools.uk/pic/button1.png)
-  ![](http://oss.musetools.uk/pic/button2.png)
+  ![](https://oss.musetools.uk/pic/preview1.png)
+  ![](https://oss.musetools.uk/pic/preview2.png)
 
 ## Getting started
 

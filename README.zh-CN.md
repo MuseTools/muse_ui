@@ -15,8 +15,8 @@
 
 ### [UI组件预览](https://musetools.github.io/muse_ui_demo/)
 
-  ![](http://oss.musetools.uk/pic/button1.png)
-  ![](http://oss.musetools.uk/pic/button2.png)
+  ![](https://oss.musetools.uk/pic/preview1.png)
+  ![](https://oss.musetools.uk/pic/preview2.png)
 
 ## 使用说明
 
