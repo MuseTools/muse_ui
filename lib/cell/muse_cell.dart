@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:muse_ui/cell/types.dart';
 import 'package:muse_ui/shared/default.dart';
@@ -78,17 +80,45 @@ class MuseCell extends StatelessWidget {
             : null);
   }
 
+  Widget _getArrowIcon() {
+    switch (arrowDirection) {
+      case ArrowDirection.up:
+        return Transform.rotate(
+          angle: math.pi /2,
+          child: Icon(
+            Icons.arrow_back_ios_new,
+            size: rightIconSize ?? Default.fontSize,
+            color: rightIconColor ?? Default.colorFontGray,
+          ),
+        );
+      case ArrowDirection.down:
+        return Transform.rotate(
+          angle: -math.pi /2,
+          child: Icon(
+            Icons.arrow_back_ios_new,
+            size: rightIconSize ?? Default.fontSize,
+            color: rightIconColor ?? Default.colorFontGray,
+          ),
+        );
+      case ArrowDirection.left:
+        return Icon(
+          Icons.arrow_back_ios_new,
+          size: rightIconSize ?? Default.fontSize,
+          color: rightIconColor ?? Default.colorFontGray,
+        );
+      case ArrowDirection.right:
+        return Icon(
+          Icons.arrow_forward_ios,
+          size: rightIconSize ?? Default.fontSize,
+          color: rightIconColor ?? Default.colorFontGray,
+        );
+    }
+  }
+
   Widget? _renderRightIcon() {
     return slotRightIcon ??
         (isLink
-            ? Align(
-              alignment: Alignment.centerRight,
-              child: Icon(
-                arrowDirection.icon,
-                size: rightIconSize ?? Default.fontSize + 10,
-                color: rightIconColor ?? Default.colorFontGray,
-              ),
-            )
+            ? Align(alignment: Alignment.centerRight, child: _getArrowIcon())
             : null);
   }
 
